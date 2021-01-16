@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/gunner.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/temp_mapa.tscn" type="PackedScene" id=2]
+
+[node name="main" type="Node"]
+
+[node name="mapa" parent="." instance=ExtResource( 2 )]
+position = Vector2( 321.024, 251.431 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="gunner" parent="." instance=ExtResource( 1 )]
+position = Vector2( 343.473, 235.717 )
+rotation = -0.397935
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Camera2D2" type="Camera2D" parent="gunner"]
+current = true
